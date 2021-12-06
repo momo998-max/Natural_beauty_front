@@ -1,0 +1,35 @@
+ion-tabs{
+    background:#F6F6F6;
+    ion-tab-bar{
+        overflow-x: auto;
+        border:0px;
+        border-radius: 40px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        height: 65px;
+        ion-tab-button {
+            ion-img{
+                width: 24px;
+                height: 24px;
+            }
+            ion-label{
+                font-size: 0.8em;
+            }
+            .iconTab{
+                margin-bottom: 5px;
+            }
+        }
+    }
+    ion-tab-bar  ion-tab-button[aria-selected=true]{ 
+        --color-selected: #0280ba;
+        .iconTab{
+            background-color:#0280ba;
+            padding: 8px;
+            border-radius: 20px;
+            margin-bottom: 5px;
+            
+        }
+    }
+}
+
+

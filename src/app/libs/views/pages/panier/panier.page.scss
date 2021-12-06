@@ -1,0 +1,66 @@
+ion-card-content{
+  top: 6%;
+  h2{
+    color: black;
+    font-size: 15px;
+  }
+}
+ion-text{
+  font-size: 0.6em;
+}
+.prixtotal{
+  font-weight: bold;
+  color: #ea2300;
+}
+.font{
+  font-size: 10px;
+}
+ion-input{
+  font-size: 0.7em;
+  border-radius: 10px;
+  border: 2px solid #0280ba;
+  --padding-start: 15px;
+  color: rgb(70, 69, 69);
+}
+ion-button{
+  --background-hover:none;
+}
+.button1{
+  --background:#0280ba;
+
+
+}
+.button2{
+  --background:#EA9300 ;
+}
+.ad{
+  color: black;
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+.btn{
+  width: 16px;
+  height: 20px;
+  position: relative;
+  bottom: 3px;
+  ion-button{
+    width: 16px;
+    height: 20px;
+    --border-color: #0280ba;
+    --border-radius: 5px;
+    color: black;
+  }
+  ion-text{
+    position: relative;
+    left: 11px;
+    top: 3px;
+  }
+}
+// .txt{
+//   po
+//   left: 5px;
+// }
+}
+

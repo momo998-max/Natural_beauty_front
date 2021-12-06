@@ -1,0 +1,21 @@
+.produit-content{
+    height: 100vh;
+    width: 100%;
+    background:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ion-card{
+        margin-top: 30px;
+        padding: 10px;
+        box-shadow: none;
+        text-align: center;
+    }
+    .produits{
+        width: 90%;
+        .abd{
+            width: 100%;
+        }
+    }
+    
+}

@@ -1,0 +1,31 @@
+
+<ion-content padding>
+  <ion-list style="text-align: center">
+    <form [formGroup]="veritelForm" (ngSubmit)="onSubmit()">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>NATURAL BEAUTY</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="../../../../../assets/icon/logo nb mini.png" alt="logo" srcset="">
+      </ion-card-content>
+    </ion-card>
+    <ion-item lines="none">
+      <ion-label position="stacked">Telephone</ion-label>
+      <ion-input type="text" name="username" formControlName="username" ></ion-input>
+    </ion-item>
+
+    <span class="error ion-padding" *ngIf="submitted && errorControl.username.errors?.required">
+      Veuillez saisir le numero de téléphone.
+    </span>
+    <span class="error ion-padding" *ngIf="submitted && errorControl.username.errors?.pattern">
+      Numero incorrect.
+    </span>
+    <br>
+    <ion-button type="submit"> Valider </ion-button>
+    <br>
+    </form>
+     <ion-button type="submit" routerLink="/create-compte">Créer un compte</ion-button>
+  </ion-list>
+
+</ion-content>
