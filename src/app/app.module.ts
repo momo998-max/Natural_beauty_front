@@ -10,10 +10,12 @@ import { ItemListProduitModule } from './libs/views/components/item-list-produit
 import { IonicStorageModule } from '@ionic/storage-angular';
 // @ts-ignore
 import {InterceptorInterceptor} from './interceptor.interceptor';
+import {CartModalPageModule} from './libs/views/pages/produit/cart-modal/cart-modal.module';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
+  // eslint-disable-next-line max-len
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, ItemListProduitModule, HttpClientModule, IonicStorageModule.forRoot()],
   // eslint-disable-next-line max-len
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

@@ -5,7 +5,8 @@
 // @ts-ignore
 export const environment = {
   production: false,
-  baseUrl: 'https://api.mixefruit.com/api'
+  // baseUrl: 'https://api.mixefruit.com/api'
+  baseUrl: 'http://localhost:8000/api'
 
 };
 

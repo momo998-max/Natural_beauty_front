@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { VerificationTelPageRoutingModule } from './verification-tel-routing.module';
 
 import { VerificationTelPage } from './verification-tel.page';
+import { AuthService } from 'src/app/libs/core/Services/auth.service';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -16,6 +18,9 @@ import { VerificationTelPage } from './verification-tel.page';
     VerificationTelPageRoutingModule,
     ReactiveFormsModule
   ],
-  declarations: [VerificationTelPage]
+  declarations: [VerificationTelPage],
+  providers:[AuthService,
+  
+  ]
 })
 export class VerificationTelPageModule {}

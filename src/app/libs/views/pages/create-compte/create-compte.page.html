@@ -4,56 +4,56 @@
     <ion-list style="text-align: center">
       <ion-card>
       <ion-card-header>
-        <ion-card-title>Mix Fruit</ion-card-title>
+        <ion-card-title>NATURAL BEAUTY</ion-card-title>
       </ion-card-header>
       <ion-card-content>
         <img src="../../../../../assets/icon/logo nb mini.png" alt="logo" srcset="">
       </ion-card-content>
     </ion-card>
       <form action="" [formGroup]="creatComptForm" (ngSubmit)="onSubmit()">
-      <ion-item lines="none">
-        <ion-label position="stacked">Prenom</ion-label>
-        <ion-input type="text" name="prenom" formControlName="prenom"></ion-input>
-      </ion-item>
-      <span class="error ion-padding" *ngIf="invalid && errorControl.prenom.errors?.required">
-      Veuillez saisir ce champ.
-    </span>
-      <span class="error ion-padding" *ngIf="invalid && errorControl.prenom.errors?.minLength">
-      Prenom incorrect.
-    </span>
-      <ion-item lines="none">
-        <ion-label position="stacked">Nom</ion-label>
-        <ion-input type="text" name="nom" formControlName="nom"></ion-input>
-      </ion-item>
-      <span class="error ion-padding" *ngIf="invalid && errorControl.nom.errors?.required">
-      Veuillez saisir ce champ.
-    </span>
-      <span class="error ion-padding" *ngIf="invalid && errorControl.nom.errors?.minLength">
-      Nom incorrect.
-    </span>
-      <ion-item lines="none">
-        <ion-label position="stacked">Telephone</ion-label>
-        <ion-input type="text" name="telephone" formControlName="tel"></ion-input>
-      </ion-item>
-      <span class="error ion-padding" *ngIf="invalid && errorControl.tel.errors?.required">
-      Veuillez saisir ce champ.
-    </span>
-      <span class="error ion-padding" *ngIf="invalid && errorControl.tel.errors?.pattern">
-      Numero incorrect.
-    </span>
-      <ion-item lines="none">
-        <ion-label position="stacked">Adresse de livraison</ion-label>
-        <ion-input type="text" name="adresse" formControlName="adress"></ion-input>
-      </ion-item>
-      <span class="error ion-padding" *ngIf="invalid && errorControl.adress.errors?.required">
-      Veuillez saisir ce champ.
-    </span>
-      <span class="error ion-padding" *ngIf="invalid && errorControl.adress.errors?.minLength">
-      adresse incorrect.
-    </span>
-      <ion-button type="submit"> Créer un compte </ion-button>
-      <br>
-      <ion-button type="submit" routerLink="/verification-tel">Se Connecter</ion-button>
+        <ion-item lines="none">
+          <ion-label position="stacked">Prenom</ion-label>
+          <ion-input type="text" name="prenom" formControlName="prenom"></ion-input>
+        </ion-item>
+        <span class="error ion-padding" *ngIf="invalid && errorControl.prenom.errors?.required">
+        Veuillez saisir ce champ.
+        </span>
+          <span class="error ion-padding" *ngIf="invalid && errorControl.prenom.errors?.minLength">
+          Prenom incorrect.
+        </span>
+        <ion-item lines="none">
+          <ion-label position="stacked">Nom</ion-label>
+          <ion-input type="text" name="nom" formControlName="nom"></ion-input>
+        </ion-item>
+        <span class="error ion-padding" *ngIf="invalid && errorControl.nom.errors?.required">
+        Veuillez saisir ce champ.
+        </span>
+          <span class="error ion-padding" *ngIf="invalid && errorControl.nom.errors?.minLength">
+          Nom incorrect.
+        </span>
+        <ion-item lines="none">
+          <ion-label position="stacked">Telephone</ion-label>
+          <ion-input type="text" name="telephone" formControlName="username"></ion-input>
+        </ion-item>
+        <span class="error ion-padding" *ngIf="invalid && errorControl.username.errors?.required">
+          Veuillez saisir ce champ.
+        </span>
+        <span class="error ion-padding" *ngIf="invalid && errorControl.username.errors?.pattern">
+          Numero incorrect.
+        </span>
+          <ion-item lines="none">
+            <ion-label position="stacked">Adresse de livraison</ion-label>
+            <ion-input type="text" name="adresse" formControlName="adress"></ion-input>
+          </ion-item>
+          <span class="error ion-padding" *ngIf="invalid && errorControl.adress.errors?.required">
+          Veuillez saisir ce champ.
+        </span>
+          <span class="error ion-padding" *ngIf="invalid && errorControl.adress.errors?.minLength">
+          adresse incorrect.
+        </span>
+          <ion-button type="submit"> Créer un compte </ion-button>
+          <br>
+          <ion-button type="submit" routerLink="/verification-tel">Se Connecter</ion-button>
       </form>
     </ion-list>
 

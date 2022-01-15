@@ -1,19 +1,75 @@
-<ion-header>
-</ion-header>
-
-<ion-content>
-  <div class="produit-content">
-    <ion-card>
-      <ion-card-title>Contact info</ion-card-title>
-      <ion-card-subtitle>782303561</ion-card-subtitle>
-    </ion-card>
-
-
-    <div class="produits">
-      <h5>nos produits</h5>
-
-    </div>
-
+<div class="produit-content">
+  <ion-card>
+    <ion-card-title>Contact info</ion-card-title>
+    <ion-card-subtitle>782303561 </ion-card-subtitle>
+  </ion-card>
+  <div class="produits">
+    <h5>nos gamme de savon</h5>
   </div>
+  <ion-content class="lesPots">
+    <form >
+    <ion-list lines="none" >
+    <ion-item (click)="openCart()" #cart>
+      <ion-card class="pot500">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="8">
+                <ion-row>
+                  <ion-col size="12">
+                    <ion-label style=" color: #eeedf4; font-weight: bold"> <h1 style="font-size: 18px">{{dataCatalogue?.produits[0]?.nom}}<br>{{dataCatalogue?.produits[0]?.prix}}cfa</h1> </ion-label>
+                  </ion-col>
+                  <ion-col size="12" class="contenu">
+                    <h5>Contenu :</h5>
+                    <ul style="display: inline; font-size: 10px" style=" color: #eeedf4;">
+                      <li style="float: left;"><i class="fa-li"></i> gamme de savon</li><br>
+                      <li style="float: left;"><i class="fa-li"></i> savon</li><br>
+                      <li style="float: left;"><i class="fa-li"></i> a base</li><br>
+                      <li style="float: left;"><i class="fa-li"></i>d'alovera</li><br>
+                      <li style="float: left;"><i class="fa-li"></i> Pour</li><br>
+                      <li style="float: left;"><i class="fa-li"></i>les teint</li><br>
+                      <li style="float: left;"><i class="fa-li"></i> noir</li>
+                    </ul>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+              <ion-col size="4" style="justify-content: center">
+                <ion-img src="../../../../../assets/icon/diamant noir.jpg" style="height: 200px;width: 70px"></ion-img>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      </ion-card>
+    </ion-item>
+    <ion-item (click)="openCart()">
+      <ion-card class="pot1000">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="8">
+                <ion-row>
+                  <ion-col size="12">
+                    <ion-label style=" color: #eeedf4; font-weight: bold"> <h1 style="font-size: 18px">{{dataCatalogue?.produits[1]?.nom}} <br>{{dataCatalogue?.produits[1]?.prix}}  Fcfa</h1> </ion-label>
+                  </ion-col>
+                  <ion-col size="12" class="contenu" style="color: #eeedf4;">
+                    <h5>Contenu :</h5>
+                    <ul style="display: inline; font-size: 10px" style=" color: #eeedf4;">
+                      <li style="float: left;"><i class="fa-li"></i> savon</li><br>
+                      <li style="float: left;"><i class="fa-li"></i> à  base</li><br>
+                      <li style="float: left;"><i class="fa-li"></i> de curcument</li><br>
+                      <li style="float: left;"><i class="fa-li"></i> pour</li><br>
+                      <li style="float: left;"><i class="fa-li"></i> les teint</li><br>
+                      <li style="float: left;"><i class="fa-li"></i>clairs</li><br>
+                      <li style="float: left;"><i class="fa-li"></i>adoucie et donne ta peau un éclat </li>
+                    </ul>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+              <ion-col size="4" style="justify-content: center">
+                <ion-img src="../../../../../assets/icon/clair.jpg" style="height: 200px;width: 70px"></ion-img>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+    </form>
+  </ion-content>
 
-</ion-content>

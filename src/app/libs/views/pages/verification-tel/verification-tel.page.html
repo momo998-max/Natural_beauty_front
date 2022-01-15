@@ -10,8 +10,11 @@
         <img src="../../../../../assets/icon/logo nb mini.png" alt="logo" srcset="">
       </ion-card-content>
     </ion-card>
+    <span class="error ion-padding">
+      {{login_error}}
+    </span>
     <ion-item lines="none">
-      <ion-label position="stacked">Telephone</ion-label>
+      <ion-label position="stacked">Username</ion-label>
       <ion-input type="text" name="username" formControlName="username" ></ion-input>
     </ion-item>
 
@@ -21,11 +24,21 @@
     <span class="error ion-padding" *ngIf="submitted && errorControl.username.errors?.pattern">
       Numero incorrect.
     </span>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Mot de passe</ion-label>
+      <ion-input type="password" name="password" formControlName="password" ></ion-input>
+    </ion-item>
+
+    <span class="error ion-padding" *ngIf="submitted && errorControl.password.errors?.required">
+      Veuillez saisir le mot de passe.
+    </span>
+
     <br>
-    <ion-button type="submit"> Valider </ion-button>
+    <ion-button (click)="onSubmit()"> Valider </ion-button>
     <br>
     </form>
-     <ion-button type="submit" routerLink="/create-compte">Créer un compte</ion-button>
+     <ion-button routerLink="/create-compte">Créer un compte</ion-button>
   </ion-list>
 
 </ion-content>

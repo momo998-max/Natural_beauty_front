@@ -4,7 +4,7 @@ ion-card-content{
   height: 60%;
   h2{
   font-weight: bold;
-    color: black;
+    color: rgb(7, 7, 7);
   font-size: 18px;
 }
 h3{
@@ -12,9 +12,9 @@ h3{
 }
 }
 ion-input{
- background: #eeedf4;
-  border: 2px solid #F6F6F6;
-  border-radius: 15px;
+ background: #f6f6f8;
+  border: 2px solid #0280ba;
+  border-radius: 5px;
 }
 ion-button{
   height: 50px;
@@ -23,7 +23,7 @@ ion-button{
   text-transform: none;
   --background:#0280ba;
   font-weight: 400;
-  --border-radius: 30px !important;
+  --border-radius: 10px !important;
   color:#FFFFFF;
   --background-hover:none;
 }

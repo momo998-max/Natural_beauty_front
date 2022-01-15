@@ -18,8 +18,10 @@ export class CreateComptePage implements OnInit {
     this.creatComptForm= this.formBuilder.group({
       prenom: ['', [Validators.required, Validators.minLength(2)]],
       nom: ['', [Validators.required, Validators.minLength(2)]],
-      tel: ['', [Validators.required, Validators.pattern('7[7|6|8|0|5][0-9]{7}$')]],
+      username: ['', [Validators.required, Validators.minLength(2)]],
       adress: ['', [Validators.required, Validators.minLength(3)]],
+      password: [''],
+      profil: []
       }
     );
   }
@@ -31,11 +33,12 @@ export class CreateComptePage implements OnInit {
     if (this.creatComptForm.invalid){
       return null;
     }
-    this.creatComptForm.value.password= 'passer123';
+    this.creatComptForm.get('password').setValue('passer123');
+    this.creatComptForm.get('profil').setValue('/api/profils/4')
     this.userSrv.createUser(this.creatComptForm.value).subscribe(
       data =>{
         this.creatComptForm.reset();
-        this.router.navigate(['main']);
+        this.router.navigate(['verification-tel']);
 
         Swal.fire({
           position: 'top-end',

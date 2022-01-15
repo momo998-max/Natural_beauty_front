@@ -2,15 +2,19 @@ ion-card-content{
   top: 4%;
   h2{
     color: black;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
   }
 }
 .histo{
-  background: #fdfdfd ;
-  border-radius: 15px;
+  background: #fbfdfd ;
+  border-radius: 5px;
+  height: 50vh;
+  width: 100%;
 }
 ion-text{
-  font-size: 9px;
+  font-size: 10px;
 }
 .button{
   font-size: 8px;
